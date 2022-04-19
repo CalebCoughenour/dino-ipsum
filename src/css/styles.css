@@ -2,4 +2,38 @@
 
 body {
   background-color: gray;
+  text-align: center;
+}
+
+label {
+  margin-top: 20px;
+}
+
+input {
+  margin-top: 20px;
+  margin-right: 5px;
+}
+
+.card {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  background-color: rgb(208, 208, 208);
+}
+
+.dino-card {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  display: none;
+  background-color: rgb(208, 208, 208);
+  position: relative;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
 }

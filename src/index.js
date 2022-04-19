@@ -24,7 +24,7 @@ $('#dino-form').submit(function(e) {
         body[i] = body[i].join(", ");
         container += body[i] + "</p>";
       } 
-      console.log(container);
+      $('.dino-card').show();
       $('#dino-paragraph').html(container);
     }, function(error) {
       $('#show-errors').text(`There was an error processing your ;request: ${error}`);
