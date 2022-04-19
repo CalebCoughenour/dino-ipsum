@@ -16,10 +16,12 @@ $('#dino-form').submit(function(e) {
   clearForm();
   let promise = DinoPara.getDinos(paragraphs, words);
   promise.then(function(response) {
-      const body = JSON.parse(response);   
+      const body = JSON.parse(response); 
+      console.log(body);
       let container = "<p>";
       let bodyLength = body.length;
       for (let i = 0; i < bodyLength; i++) {
+        body[i] = body[i].join(", ");
         container += body[i] + "</p>";
       } 
       console.log(container);
