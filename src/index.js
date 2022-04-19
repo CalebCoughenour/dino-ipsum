@@ -4,16 +4,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import DinoPara from './js/dino-api';
 
-const clearForm = () => {
-  $('#paragraphs').text("");
-  $('#words').text("");
-};
 
 $('#dino-form').submit(function(e) {
   e.preventDefault();
   let paragraphs = $('#paragraphs').val();
   let words = $('#words').val();
-  clearForm();
+  
   let promise = DinoPara.getDinos(paragraphs, words);
   promise.then(function(response) {
       const body = JSON.parse(response); 
